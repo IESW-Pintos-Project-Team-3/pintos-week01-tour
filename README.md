@@ -59,9 +59,9 @@ docker images
 ## 🐳 3. 컨테이너 실행 (로컬 코드 마운트 포함)
 
 ```bash
-docker run --platform linux/amd64 -it --name pintos-dev \
-  -v ~/Desktop/pintos:/workspace \
-  -w /workspace \
+docker run --platform linux/amd64 -it --name pintos-dev 
+  -v ~/Desktop/pintos:/workspace 
+  -w /workspace 
   pintos-image:v1
 ```
 **주의 사항 : ~/Desktop/pintos 부분은 자신의 pintos 코드 주소로 할 것!**
